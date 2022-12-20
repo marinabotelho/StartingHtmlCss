@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+body{
+    background-color: rgb(255, 254, 177);
+    font-family:'Patrick Hand', cursive;
+}
+h1#principal{
+    font-family: 'Patrick Hand', cursive;
+    color: rgb(19, 19, 19);
+    font-size: px50;
+}
+h1{
+    color: rgb(247, 15, 15);
+}
+h2{
+color: rgb(247, 15, 15);
+}
