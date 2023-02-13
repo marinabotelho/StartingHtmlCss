@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colando imagens</title>
+</head>
+<body>
+    <h1>Veja aqui uma imagem colada em tamanho PEQUENO</h1>
+    <img src="imagens/foto-p.png.png" alt="imagem p">
+    <h1>Agora veja em tamanho MÉDIO</h1>
+    <img src="imagens/foto-m.png.png" alt="imagem m">
+    <h1>Por fim ... Veja essa em tamanho GRANDE</h1>
+    <img src="imagens/foto-g.png.png" alt="imagem g">
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador
+    
+    </p>
+    <picture>
+        <source media="(max-width: 7050 )" srcset="foto-m.png.png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png.png"type="image/">
+        <img src="imagens/foto-g.png.png" alt="imagem flexível">
+
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio src="midia/instrumental.mp3.mp3" controls autoplay></audio>
+    <p>Vamos reproduzir outro áudio</p>
+    <audio src="midia/19th Floor - Bobby Richards.mp3" controls autoplay ></audio>
+    <p>Aqui podemos fazer download dele</p>
+    <a href="midia/19th Floor - Bobby Richards.mp3">Clique aqui para baixar o arquivo MP3</a>
+</body>
+</html>

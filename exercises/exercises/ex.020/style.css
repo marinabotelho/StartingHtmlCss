@@ -1,0 +1,20 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+body{
+    background-image: linear-gradient(to right, white,pink,rgb(233, 16, 179));
+}
+h1{
+    color: #d212eb;
+    text-shadow: 1px 2px rgb(116, 7, 150);
+}
+h2{
+    color: #eb12bc;
+    text-shadow: 1px 2px rgb(160, 7, 122);
+}
+p{
+    text-align: justify;
+}
+
+
