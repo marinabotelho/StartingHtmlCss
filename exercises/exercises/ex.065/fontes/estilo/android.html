@@ -58,6 +58,7 @@
           color: rgb(255, 255, 255);
           max-width: 500px;
           margin: auto;
+          margin-bottom: 30px;
           text-shadow: 2px 2px 0px rgb(46, 48, 47);
          font-family: var(--fonte-padrao);
          font-size: 1.2em;
@@ -136,6 +137,22 @@
           max-width: 350px;
           display:block;
           margin:auto;
+        }
+        div.video {
+        background-color: #063d1e;
+        margin: 0px -20px 30px -20;
+        padding: 20px;
+        margin-bottom: 30px;
+        padding-bottom: 59%;
+        position: relative;
+
+        }
+        div.video > iframe {
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          width: 90%;
+          height: 90%;
         }
         aside{
           background-color: #a8d7bd;
@@ -238,9 +255,11 @@
      escritório do <strong>Google</strong> e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.
     </p>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" 
-     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-     web-share" allowfullscreen></iframe>
+    <div class='video'>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+       web-share" allowfullscreen></iframe>
+    </div>
     
     <aside>
     <h3>
