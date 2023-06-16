@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .button {
+      padding: 20px;
+      font-size: 18px;
+    }
+    
+    .no {
+      position: relative;
+    }
+    
+    .no.clicked {
+      animation: moveUpDown 2s ease-in-out infinite;
+    }
+    
+    @keyframes moveUpDown {
+      0%, 100% { transform: translateY(0); }
+      25%, 75% { transform: translateY(-20px); }
+      50% { transform: translateX(20px); }
+    }
+    
+    .yes {
+      animation: celebrate 2s infinite;
+    }
+    
+    @keyframes celebrate {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="button no" onclick="moveUpDown(this)">Não</button>
+    <button class="button yes" onclick="celebrate(this)">Sim</button>
+  </div>
+
+  <script>
+    function moveUpDown(button) {
+      button.classList.add('clicked');
+      button.disabled = true;
+
+      setTimeout(function() {
+        button.classList.remove('clicked');
+        button.disabled = false;
+      }, 2000);
+    }
+
+    function celebrate(button) {
+      button.style.animation = 'celebrate 2s infinite';
+
+      // Código para soltar emojis de comemoração
+      // ...
+    }
+  </script>
+</body>
+</html>
